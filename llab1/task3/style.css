@@ -1,0 +1,33 @@
+body {
+    background-color: white;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+
+.player-title {
+    font-size: 20px;
+    color: grey;
+    margin-bottom: 12px;
+    margin-top: 25px;
+}
+
+.cards-row {
+    display: flex;
+    gap: 8px;
+}
+
+.card {
+    background-color: white;
+    padding: 8px 14px;
+    font-size: 36px;
+    line-height: 1;
+    display: inline-block;
+}
+
+.black {
+    color: black;
+}
+
+.red {
+    color: red;
+}
