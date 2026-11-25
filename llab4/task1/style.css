@@ -1,0 +1,72 @@
+.product-card {
+    width: 230px;
+    padding: 15px;
+    margin: 30px auto;
+    background-color: #f3f7fa;
+    border: 1px solid #b7c9d6;
+    border-radius: 12px;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+.product-image {
+    display: block;
+    width: 160px;
+    height: 160px;
+    margin: 0 auto 12px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product-title {
+    margin: 8px 0 14px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.product-property {
+    margin: 8px 0;
+    font-size: 13px;
+}
+
+.property-name {
+    font-weight: bold;
+}
+
+.property-value {
+    color: #455a64;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+.edit-button,
+.delete-button {
+    padding: 7px 14px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.2s, box-shadow 0.2s;
+}
+
+.edit-button {
+    background-color: #3988c5;
+}
+
+.edit-button:hover {
+    background-color: #2671aa;
+    box-shadow: 0 3px 7px #9aaab5;
+}
+
+.delete-button {
+    background-color: #d9534f;
+}
+
+.delete-button:hover {
+    background-color: #b52b27;
+    box-shadow: 0 3px 7px #9aaab5;
+}

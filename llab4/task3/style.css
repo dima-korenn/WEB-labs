@@ -1,0 +1,56 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    width: 360px;
+    margin: 30px auto;
+    text-align: center;
+}
+
+.large-container {
+    display: none;
+    width: 340px;
+    height: 230px;
+    margin: 0 auto 10px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #777;
+}
+
+.large-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+
+.gallery:has(.large-container:target) .large-container {
+    display: none;
+}
+
+.gallery:has(.large-container:target) .large-container:target {
+    display: block;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+}
+
+.thumbnails a {
+    display: block;
+    width: 58px;
+    height: 40px;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 0 1px 5px #777;
+}
+
+.thumbnails img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
