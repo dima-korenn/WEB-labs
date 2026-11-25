@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Пори року</title>
+
+    <style>
+        ul {
+            list-style: none;
+            padding-left: 25px;
+        }
+
+        .seasons > li::before {
+            content: "»";
+            color: #36b5d8;
+            font-weight: bold;
+            margin-right: 15px;
+        }
+
+        .winter li::before {
+            content: "❄️";
+            margin-right: 8px;
+        }
+
+        .spring li::before {
+            content: "🍃";
+            margin-right: 8px;
+        }
+
+        .summer li::before {
+            content: "☀️";
+            margin-right: 8px;
+        }
+
+        .autumn li::before {
+            content: "🍁";
+            margin-right: 8px;
+        }
+    </style>
+</head>
+<body>
+    <ul class="seasons">
+        <li>Winter
+            <ul class="winter">
+                <li>December</li>
+                <li>January</li>
+                <li>February</li>
+            </ul>
+        </li>
+
+        <li>Spring
+            <ul class="spring">
+                <li>March</li>
+                <li>April</li>
+                <li>May</li>
+            </ul>
+        </li>
+
+        <li>Summer
+            <ul class="summer">
+                <li>June</li>
+                <li>July</li>
+                <li>August</li>
+            </ul>
+        </li>
+
+        <li>Autumn
+            <ul class="autumn">
+                <li>September</li>
+                <li>October</li>
+                <li>November</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+</html>
