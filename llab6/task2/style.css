@@ -1,0 +1,55 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.shutter-container {
+    position: relative;
+    width: 380px;
+    height: 140px;
+    margin: 80px auto;
+    background-color: #f4f4f4;
+    perspective: 600px;
+}
+
+.message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 1;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+}
+
+.shutter {
+    position: absolute;
+    top: 0;
+    z-index: 2;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    background-color: #873064;
+    border: 4px solid #5b1745;
+    transition: transform 0s;
+}
+
+.shutter-left {
+    left: 0;
+    transform-origin: right center;
+}
+
+.shutter-right {
+    right: 0;
+    transform-origin: left center;
+}
+
+.shutter-container:hover .shutter {
+    transition: transform 2s ease;
+}
+
+.shutter-container:hover .shutter-left {
+    transform: translateX(-90px) rotateY(45deg);
+}
+
+.shutter-container:hover .shutter-right {
+    transform: translateX(90px) rotateY(-45deg);
+}

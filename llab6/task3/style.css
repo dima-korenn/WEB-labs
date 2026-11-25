@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 50px 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f3f3f3;
+}
+
+.plans {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 14px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.plan {
+    position: relative;
+    z-index: 1;
+    width: 155px;
+    height: 230px;
+    padding: 12px 8px;
+    border: 1px solid #ccc;
+    border-top: 3px solid;
+    border-radius: 9px;
+    background-color: white;
+    box-shadow: 0 2px 8px #aaa;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.plan:hover {
+    z-index: 2;
+    transform: scale(1.08);
+}
+
+.enterprise {
+    border-top-color: #d7355b;
+}
+
+.professional {
+    border-top-color: #e39832;
+}
+
+.standard {
+    border-top-color: #28769a;
+}
+
+.basic {
+    border-top-color: #58b833;
+}
+
+.plan-name {
+    margin: 3px 0 17px;
+    font-size: 12px;
+}
+
+.plan-price {
+    margin: 0;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.plan-period {
+    margin: 2px 0 12px;
+    color: #aaa;
+    font-size: 11px;
+}
+
+.plan-feature {
+    margin: 8px 0;
+    font-size: 9px;
+    font-weight: bold;
+}
+
+.plan-button {
+    width: 60px;
+    margin-top: 8px;
+    padding: 7px;
+    border: 0;
+    border-radius: 4px;
+    color: white;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.enterprise .plan-button {
+    background-color: #d7355b;
+}
+
+.professional .plan-button {
+    background-color: #e39832;
+}
+
+.standard .plan-button {
+    background-color: #28769a;
+}
+
+.basic .plan-button {
+    background-color: #58b833;
+}
